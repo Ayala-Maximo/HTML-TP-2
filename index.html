@@ -1,0 +1,100 @@
+!<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Estructura Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        .logo {
+            width: 50px;
+            height: 50px;
+            background-color: #555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+        }
+        .menu {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+        }
+        .menu ul li {
+            margin: 0;
+        }
+        .menu ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            background-color: #444;
+            border-radius: 5px;
+        }
+        .header-right {
+            display: flex;
+            align-items: center;
+        }
+        .body {
+            flex: 1;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="logo">Logo</div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="header-right">Header</div>
+    </header>
+
+    <div class="body">
+        <h1>Contenido Principal</h1>
+        <p>Este es el contenido principal de la página.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mi Sitio Web</p>
+    </footer>
+</div>
+
+</body>
+</html>
