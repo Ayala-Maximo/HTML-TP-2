@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Elementos HTML y JavaScript</title>
+</head>
+<body>
+
+<h1>Ejemplos de Botones, Casillas y Barras</h1>
+
+<!-- Botones -->
+<h2>Botones</h2>
+<button onclick="alert('Botón 1 presionado')">Botón 1</button>
+<button onclick="alert('Botón 2 presionado')">Botón 2</button>
+
+<!-- Casillas de verificación -->
+<h2>Casillas de Verificación</h2>
+<label>
+    <input type="checkbox" onclick="checkboxClicked(this)"> Opción 1
+</label>
+<br>
+<label>
+    <input type="checkbox" onclick="checkboxClicked(this)"> Opción 2
+</label>
+
+<!-- Casillas de radio -->
+<h2>Casillas de Radio</h2>
+<label>
+    <input type="radio" name="grupo1" onclick="radioClicked(this)"> Opción A
+</label>
+<br>
+<label>
+    <input type="radio" name="grupo1" onclick="radioClicked(this)"> Opción B
+</label>
+
+<!-- Barra de Progreso -->
+<h2>Barra de Progreso</h2>
+<progress id="progressBar" value="50" max="100"></progress>
+<br>
+<button onclick="increaseProgress()">Incrementar Progreso</button>
+
+<!-- Barra de Desplazamiento -->
+<h2>Barra de Desplazamiento</h2>
+<input type="range" min="0" max="100" value="50" oninput="rangeChanged(this)">
+
+<script src="scripts.js"></script>
+</body>
+</html>
